@@ -48,7 +48,7 @@
 .picker__select--year {
     border: 1px solid @border-select;
     height: 2em;
-    padding: .5em; // For firefox
+    padding: 0 0 0 .5em; // For firefox
     margin-left: .25em;
     margin-right: .25em;
 
@@ -237,6 +237,7 @@
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
     .picker-item-selected;
+    text-shadow: 0 0 8px #666;
 }
 
 // Disabled dates.

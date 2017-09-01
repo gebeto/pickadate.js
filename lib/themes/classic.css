@@ -8,7 +8,7 @@
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
-  color: #000000;
+  color: #000;
   position: absolute;
   z-index: 10000;
   -webkit-user-select: none;
@@ -52,7 +52,7 @@
  */
 .picker__holder {
   position: absolute;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #aaaaaa;
   border-top-width: 0;
   border-bottom-width: 0;

@@ -8,7 +8,7 @@
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
-  color: #000000;
+  color: #000;
   position: absolute;
   z-index: 10000;
   -webkit-user-select: none;
@@ -111,7 +111,7 @@
  * The box contains all the picker contents.
  */
 .picker__box {
-  background: #ffffff;
+  background: #fff;
   display: table-cell;
   vertical-align: middle;
 }
@@ -124,7 +124,7 @@
   .picker__box {
     display: block;
     font-size: 1.33em;
-    border: 1px solid #777777;
+    border: 1px solid #777;
     border-top-color: #898989;
     border-bottom-width: 0;
     border-radius: 5px 5px 0 0;

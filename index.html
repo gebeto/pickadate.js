@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="lib/compressed/themes/classic.css">
+<link rel="stylesheet" type="text/css" href="lib/compressed/themes/classic.date.css">
+<link rel="stylesheet" type="text/css" href="lib/compressed/themes/classic.time.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/compressed/legacy.js"></script>
+<script type="text/javascript" src="lib/compressed/picker.js"></script>
+<script type="text/javascript" src="lib/compressed/picker.date.js"></script>
+<script type="text/javascript" src="lib/compressed/picker.time.js"></script>
+
+<input type="text" id="pd1">
+
+<script type="text/javascript">
+
+  var pickadate = $('#pd1').pickadate({
+    daysDescriptions: {
+      1506027600000: 5,
+    },
+    daysBG: {
+      1506027600000: '#345676',
+    },
+    descriptionAsTooltip: true,
+    selectMonths: true,
+    selectYears: true,
+    formatSubmit: "yyyy-mm-dd",
+    format: "yyyy-mm-dd",
+    descriptionAsTooltip: true,
+    tooltipTemplate: function(val) {
+        if (val == 1) {
+            return 'Запланировано ' + val + ' звонок';
+        } else if (val > 1 && val < 5) {
+            return 'Запланировано ' + val + ' звонка';
+        }
+        return 'Запланировано ' + val + ' звонков';
+    }
+  });
+
+</script>
+
+</body>
+</html>
